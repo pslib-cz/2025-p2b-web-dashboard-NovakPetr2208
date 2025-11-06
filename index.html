@@ -1,14 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/bs.css">
+    <script src="assets/bs.js"></script>
+    <link rel="stylesheet" href="assets/bs-icons.css">
     <title>IoT</title>
 </head>
 <body>
-  https://placehold.co/840x472
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pslib IoT Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Dům</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Garáž</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Zahrada</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <small>6.11.2025, 11:36</small>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row my-5 g-4">
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true"><i class="bi bi-house-gear pe-1"></i>Hlavní panel</a>
+            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between">
+              <span><i class="bi bi-bell pe-1"></i>Oznámení</span> 
+              <span class="badge rounded-pill text-bg-primary">2</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-plug pe-1"></i>Moje zařízení</a>
+            <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-sliders pe-1"></i>Nastavení</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row g-4">
+              <div class="col-md-6 col-xxl-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Teplota - hlavní chodba</p>
+                    <p class="card-text ">23.4 °C</p>
+                    <p class="card-text"><small>Další měření za: 5 minut</small></p>
+                    <a class="btn btn-primary" href="#" role="button">Změřit teď</a>  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-xxl-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Teplota - kuchyně</p>
+                    <p class="card-text">25.2 °C</p>
+                    <p class="card-text"><small>Další měření za: 12 minut</small></p>
+                    <a class="btn btn-primary" href="#" role="button">Změřit teď</a>  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-xxl-4">
+                <div class="card text-center border-success">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Přední vchod</p>
+                    <i class="bi bi-lock"></i>
+                    <p class="card-text"><small>Zamknuto</small></p>
+                    <a class="btn btn-warning" href="#" role="button">Odemknout</a>  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6 col-xxl-4">
+                <div class="card text-center border-danger">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Přední vchod</p>
+                    <i class="bi bi-unlock"></i>
+                    <p class="card-text"><small>Odemknuto</small></p>
+                    <a class="btn btn-success" href="#" role="button">Zamknout</a>  
+                  </div>
+                </div>
+              </div> 
+          </div>
+          <div class="row g-4 my-5">
+            <div class="col-xl-6 col-xxl-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Kamera Západ</p>
+                    <img src="https://placehold.co/840x472" class="card-img-top" alt="Pohled na kameru Západ"> 
+                  </div>
+                </div>
+            </div>    
+            <div class="col-xl-6 col-xxl-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Kamera Východ</p>
+                    <img src="https://placehold.co/840x472" class="card-img-top" alt="Pohled na kameru Východ"> 
+                  </div>
+                </div>
+            </div>   
+            <div class="col-xl-6 col-xxl-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <p class="card-title h5 py-2">Kamera Sever</p>
+                    <img src="https://placehold.co/840x472" class="card-img-top" alt="Pohled na kameru Sever"> 
+                  </div>
+                </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
+
